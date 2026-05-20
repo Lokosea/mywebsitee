@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Talent | Gaming & Esports Talent Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+
+    <div class="container">
+        <main class="profile-card">
+            
+            <div class="banner">
+                <div class="banner-overlay"></div>
+                <h1 class="banner-title">NEXUS TALENT</h1>
+            </div>
+
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img src="logo.png" alt="Nexus Talent Logo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                </div>
+            </div>
+
+            <div class="profile-info">
+                <h2>NexusTalent <span class="verified-badge" title="Verified Agency">✓</span></h2>
+                <p class="username">@NexussTalentt</p>
+                
+                <p class="bio">
+                    <strong>EST. 2026 | Gaming & Esports Talent Agency</strong><br>
+                    Helping Creators and Players secure sponsors, grow audiences & turn skill into income.
+                </p>
+            </div>
+
+            <div class="links-section">
+                <a href="mailto:NexusTalentMedia@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i> Contact / Business Inquiries
+                </a>
+                
+                <a href="#sponsorship-form" class="btn">
+                    <i class="fa-solid fa-gamepad"></i> Apply for Sponsorship
+                </a>
+
+                <a href="#" class="btn" onclick="alert('Coming soon...'); return false;">
+                    <i class="fa-solid fa-users"></i> Our Roster / Talent
+                </a>
+            </div>
+
+            <div class="social-footer">
+                <a href="https://x.com/NexussTalentt" target="_blank" aria-label="X / Twitter" style="display: flex; align-items: center;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 22px; height: 22px; fill: currentColor;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                <a href="#" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="sponsorship-form" class="modal-overlay">
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            
+            <div class="modal-layout">
+                <div class="modal-text">
+                    <h3>LETS BUILD THE FUTURE</h3>
+                    <p>Ready to level up your gaming career? Submit your application below to get noticed by our management team.</p>
+                </div>
+                
+                <div class="modal-form-wrapper">
+                    <form action="mailto:NexusTalentMedia@gmail.com" method="GET" enctype="text/plain">
+                        <div class="form-group">
+                            <label>NAME</label>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>YOUR EMAIL</label>
+                            <input type="email" name="Email" value="NexusTalentMedia@gmail.com" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>PRIMARY PLATFORM</label>
+                                <input type="text" name="Platform" placeholder="Twitch, YouTube, Kick, etc." required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>AUDIENCE SIZE</label>
+                                <input type="text" name="Audience_Size" placeholder="e.g. 10k followers" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>MESSAGE / SOCIAL LINKS</label>
+                            <textarea name="Message" rows="4" placeholder="Tell us about your channels, team, or background..." required></textarea>
+                        </div>
+                        
+                        <input type="hidden" name="subject" value="Nexus Talent Sponsorship Application">
+                        
+                        <button type="submit" class="submit-btn">SUBMIT &rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
